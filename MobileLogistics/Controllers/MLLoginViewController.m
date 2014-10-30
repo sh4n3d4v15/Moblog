@@ -48,9 +48,9 @@
     
     _messageLabel.text = @"";
     
-	NSString *name      = @"APITester";//[_nameField.text copy];
+	NSString *name      = [_nameField.text copy];//@"APITester";
 	NSString *vehicle   = [_vehicleField.text copy];
-	NSString *password  = @"QVBJVDNzdDNyX3A0c3N3MHJk";//[_passwordField.text copy];
+	NSString *password  = [_passwordField.text copy];//@"QVBJVDNzdDNyX3A0c3N3MHJk";
 	if ([name isEqualToString:@""] || [vehicle isEqualToString:@""] || [password isEqualToString:@""]) {
 		_messageLabel.text = NSLocalizedString(@"Credentials missing", @"Credentials missing");
 	}

@@ -35,7 +35,7 @@ static NSString *stopid = @"80013014";
 - (void)testAuthenticationFail {
 	XCTestExpectation *completionExpectation = [self expectationWithDescription:@"network completed"];
 
-	[[MLClient sharedClient] getLoadsForUser:@{ @"carrier" : @"APITester", @"password" : @"wrong", @"vehicle" : @"wrong" } completion: ^(NSArray *loads,NSError *error) {
+	[[MLClient sharedClient] getLoadsForUser:@{ @"name" : @"APITester", @"password" : @"wrong", @"vehicle" : @"wrong" } completion: ^(NSArray *loads,NSError *error) {
         id errorCode = [NSNumber numberWithInt:error.code];
 	    XCTAssertEqualObjects(@401, errorCode, @"Authentication should fail");
 	    [completionExpectation fulfill];
@@ -46,7 +46,7 @@ static NSString *stopid = @"80013014";
 - (void)testAuthenticationPass {
 	XCTestExpectation *completionExpectation = [self expectationWithDescription:@"Authentication should pass"];
 
-	[[MLClient sharedClient] getLoadsForUser:@{ @"carrier" : @"APITester", @"password" : @"QVBJVDNzdDNyX3A0c3N3MHJk", @"vehicle" : @"shane" } completion: ^(NSArray *loads, NSError *error) {
+	[[MLClient sharedClient] getLoadsForUser:@{ @"name" : @"APITester", @"password" : @"QVBJVDNzdDNyX3A0c3N3MHJk", @"vehicle" : @"shane" } completion: ^(NSArray *loads, NSError *error) {
 	    XCTAssertNil(error, @"Authentication should pass");
 	    [completionExpectation fulfill];
 	}];
@@ -56,7 +56,7 @@ static NSString *stopid = @"80013014";
 - (void)DISABLED_testReturnsErrorOffline {
     XCTestExpectation *completionExpectation = [self expectationWithDescription:@"network completed"];
     
-    [[MLClient sharedClient] getLoadsForUser:@{ @"carrier" : @"APITester", @"password" : @"wrong", @"vehicle" : @"wrong" } completion: ^(NSArray *loads,NSError *error) {
+    [[MLClient sharedClient] getLoadsForUser:@{ @"name" : @"APITester", @"password" : @"wrong", @"vehicle" : @"wrong" } completion: ^(NSArray *loads,NSError *error) {
         id errorCode = [NSNumber numberWithInt:error.code];
         XCTAssertEqualObjects(@-1009, errorCode, @"Should return error when offline");
         [completionExpectation fulfill];
@@ -68,7 +68,7 @@ static NSString *stopid = @"80013014";
 - (void)testNoLoadsForUser {
 	XCTestExpectation *completionExpectation = [self expectationWithDescription:@"network completed"];
 
-	[[MLClient sharedClient] getLoadsForUser:@{ @"carrier" : @"APITester", @"password" : @"QVBJVDNzdDNyX3A0c3N3MHJk", @"vehicle" : @"wrong" } completion: ^(NSArray *loads, NSError *error) {
+	[[MLClient sharedClient] getLoadsForUser:@{ @"name" : @"APITester", @"password" : @"QVBJVDNzdDNyX3A0c3N3MHJk", @"vehicle" : @"wrong" } completion: ^(NSArray *loads, NSError *error) {
         XCTAssertNotNil(error,@"Method should throw error");
         id errorCode = [NSNumber numberWithInt:error.code];
 	    XCTAssertEqualObjects(errorCode, @100,@"There should be no loads for user");
@@ -80,7 +80,7 @@ static NSString *stopid = @"80013014";
 - (void)testFoundLoadsForUser {
 	XCTestExpectation *completionExpectation = [self expectationWithDescription:@"network completed"];
 
-	[[MLClient sharedClient] getLoadsForUser:@{ @"carrier" : @"APITester", @"password" : @"QVBJVDNzdDNyX3A0c3N3MHJk", @"vehicle" : @"shane" } completion: ^(NSArray *loads, NSError *error) {
+	[[MLClient sharedClient] getLoadsForUser:@{ @"name" : @"APITester", @"password" : @"QVBJVDNzdDNyX3A0c3N3MHJk", @"vehicle" : @"shane" } completion: ^(NSArray *loads, NSError *error) {
 	    XCTAssertTrue([loads isKindOfClass:[NSArray class]], @"Loads is an array");
 	    XCTAssertFalse([loads count] == 0, @"Found loads for user");
 	    [completionExpectation fulfill];
@@ -91,7 +91,7 @@ static NSString *stopid = @"80013014";
 - (void)testFoundLoadsForUserMatchUsername {
 	NSString *loginUser = @"SHANE";
 	XCTestExpectation *completionExpectation = [self expectationWithDescription:@"network completed"];
-	[[MLClient sharedClient] getLoadsForUser:@{ @"carrier" : @"APITester", @"password" : @"QVBJVDNzdDNyX3A0c3N3MHJk", @"vehicle" : loginUser } completion: ^(NSArray *loads, NSError *error) {
+	[[MLClient sharedClient] getLoadsForUser:@{ @"name" : @"APITester", @"password" : @"QVBJVDNzdDNyX3A0c3N3MHJk", @"vehicle" : loginUser } completion: ^(NSArray *loads, NSError *error) {
 	    XCTAssertTrue([loads isKindOfClass:[NSArray class]], @"Loads is an array");
 	    [loads enumerateObjectsUsingBlock: ^(id obj, NSUInteger idx, BOOL *stop) {
 	        NSString *user = [obj valueForKey:@"vehicle"];

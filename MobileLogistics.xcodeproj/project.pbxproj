@@ -64,11 +64,12 @@
 		D0524EAE19FFDF260070C4D0 /* truck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0524E8519FFDF260070C4D0 /* truck@2x.png */; };
 		D0524EAF19FFDF260070C4D0 /* truckwhite.png in Resources */ = {isa = PBXBuildFile; fileRef = D0524E8619FFDF260070C4D0 /* truckwhite.png */; };
 		D0524EB019FFDF260070C4D0 /* truckwhite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0524E8719FFDF260070C4D0 /* truckwhite@2x.png */; };
+		D074A3D31A027A7C0052D390 /* MLMasterViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D074A3D21A027A7C0052D390 /* MLMasterViewControllerTests.m */; };
+		D074A3D81A02802F0052D390 /* MLItemTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D074A3D51A02802F0052D390 /* MLItemTextField.m */; };
+		D074A3D91A02802F0052D390 /* MLMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D074A3D71A02802F0052D390 /* MLMapAnnotation.m */; };
 		D09906D619F93D9B00317A88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D09906D519F93D9B00317A88 /* main.m */; };
 		D09906D919F93D9B00317A88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D09906D819F93D9B00317A88 /* AppDelegate.m */; };
-		D09906DC19F93D9B00317A88 /* MobileLogistics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D09906DA19F93D9B00317A88 /* MobileLogistics.xcdatamodeld */; };
-		D09906DF19F93D9B00317A88 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09906DE19F93D9B00317A88 /* MasterViewController.m */; };
-		D09906E219F93D9B00317A88 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09906E119F93D9B00317A88 /* DetailViewController.m */; };
+		D09906DF19F93D9B00317A88 /* MLMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09906DE19F93D9B00317A88 /* MLMasterViewController.m */; };
 		D09906E519F93D9B00317A88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09906E319F93D9B00317A88 /* Main.storyboard */; };
 		D09906E719F93D9B00317A88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09906E619F93D9B00317A88 /* Images.xcassets */; };
 		D09906EA19F93D9B00317A88 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09906E819F93D9B00317A88 /* LaunchScreen.xib */; };
@@ -158,16 +159,18 @@
 		D0524E8519FFDF260070C4D0 /* truck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "truck@2x.png"; sourceTree = "<group>"; };
 		D0524E8619FFDF260070C4D0 /* truckwhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = truckwhite.png; sourceTree = "<group>"; };
 		D0524E8719FFDF260070C4D0 /* truckwhite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "truckwhite@2x.png"; sourceTree = "<group>"; };
+		D074A3D21A027A7C0052D390 /* MLMasterViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLMasterViewControllerTests.m; sourceTree = "<group>"; };
+		D074A3D41A02802F0052D390 /* MLItemTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLItemTextField.h; sourceTree = "<group>"; };
+		D074A3D51A02802F0052D390 /* MLItemTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLItemTextField.m; sourceTree = "<group>"; };
+		D074A3D61A02802F0052D390 /* MLMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLMapAnnotation.h; sourceTree = "<group>"; };
+		D074A3D71A02802F0052D390 /* MLMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLMapAnnotation.m; sourceTree = "<group>"; };
 		D09906D019F93D9B00317A88 /* MobileLogistics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileLogistics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09906D419F93D9B00317A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D09906D519F93D9B00317A88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D09906D719F93D9B00317A88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D09906D819F93D9B00317A88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D09906DB19F93D9B00317A88 /* MobileLogistics.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MobileLogistics.xcdatamodel; sourceTree = "<group>"; };
-		D09906DD19F93D9B00317A88 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = Controllers/MasterViewController.h; sourceTree = "<group>"; };
-		D09906DE19F93D9B00317A88 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = Controllers/MasterViewController.m; sourceTree = "<group>"; };
-		D09906E019F93D9B00317A88 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Controllers/DetailViewController.h; sourceTree = "<group>"; };
-		D09906E119F93D9B00317A88 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Controllers/DetailViewController.m; sourceTree = "<group>"; };
+		D09906DD19F93D9B00317A88 /* MLMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MLMasterViewController.h; path = Controllers/MLMasterViewController.h; sourceTree = "<group>"; };
+		D09906DE19F93D9B00317A88 /* MLMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MLMasterViewController.m; path = Controllers/MLMasterViewController.m; sourceTree = "<group>"; };
 		D09906E419F93D9B00317A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D09906E619F93D9B00317A88 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D09906E919F93D9B00317A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -225,10 +228,8 @@
 			children = (
 				D0524E3519FEB3780070C4D0 /* MLLoginViewController.h */,
 				D0524E3619FEB3780070C4D0 /* MLLoginViewController.m */,
-				D09906DD19F93D9B00317A88 /* MasterViewController.h */,
-				D09906DE19F93D9B00317A88 /* MasterViewController.m */,
-				D09906E019F93D9B00317A88 /* DetailViewController.h */,
-				D09906E119F93D9B00317A88 /* DetailViewController.m */,
+				D09906DD19F93D9B00317A88 /* MLMasterViewController.h */,
+				D09906DE19F93D9B00317A88 /* MLMasterViewController.m */,
 				D0F6D8DA1A0008F300CE63A3 /* MLStopDetailTableViewController.h */,
 				D0F6D8DB1A0008F300CE63A3 /* MLStopDetailTableViewController.m */,
 			);
@@ -343,19 +344,18 @@
 		D09906D219F93D9B00317A88 /* MobileLogistics */ = {
 			isa = PBXGroup;
 			children = (
-				D0F6D8D619FFFB4200CE63A3 /* Views */,
-				D0524E5E19FFDF260070C4D0 /* Images */,
 				D0524E4119FFD6F60070C4D0 /* Models */,
+				D0F6D8D619FFFB4200CE63A3 /* Views */,
+				D0524E3819FEB3EC0070C4D0 /* Controllers */,
+				D0524E5D19FFDAE20070C4D0 /* Network */,
+				D0524E5E19FFDF260070C4D0 /* Images */,
 				D0524E3319FE9FED0070C4D0 /* house.JPG */,
 				D09906D719F93D9B00317A88 /* AppDelegate.h */,
 				D09906D819F93D9B00317A88 /* AppDelegate.m */,
-				D0524E3819FEB3EC0070C4D0 /* Controllers */,
 				D09906E319F93D9B00317A88 /* Main.storyboard */,
 				D09906E619F93D9B00317A88 /* Images.xcassets */,
 				D09906E819F93D9B00317A88 /* LaunchScreen.xib */,
-				D09906DA19F93D9B00317A88 /* MobileLogistics.xcdatamodeld */,
 				D09906D319F93D9B00317A88 /* Supporting Files */,
-				D0524E5D19FFDAE20070C4D0 /* Network */,
 			);
 			path = MobileLogistics;
 			sourceTree = "<group>";
@@ -372,6 +372,7 @@
 		D09906F219F93D9B00317A88 /* MobileLogisticsTests */ = {
 			isa = PBXGroup;
 			children = (
+				D074A3D21A027A7C0052D390 /* MLMasterViewControllerTests.m */,
 				D0524E3919FEB89F0070C4D0 /* MLLoginViewControllerTests.m */,
 				D09906F519F93D9B00317A88 /* MLClientTests.m */,
 				D0524E3119FAB0550070C4D0 /* MobileLogisticsModelTest.m */,
@@ -391,6 +392,10 @@
 		D0F6D8D619FFFB4200CE63A3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D074A3D41A02802F0052D390 /* MLItemTextField.h */,
+				D074A3D51A02802F0052D390 /* MLItemTextField.m */,
+				D074A3D61A02802F0052D390 /* MLMapAnnotation.h */,
+				D074A3D71A02802F0052D390 /* MLMapAnnotation.m */,
 				D0F6D8D719FFFB5C00CE63A3 /* MLStopCell.h */,
 				D0F6D8D819FFFB5C00CE63A3 /* MLStopCell.m */,
 			);
@@ -577,6 +582,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0F6D8D919FFFB5C00CE63A3 /* MLStopCell.m in Sources */,
+				D074A3D91A02802F0052D390 /* MLMapAnnotation.m in Sources */,
 				D0524E5C19FFD9150070C4D0 /* Stop.m in Sources */,
 				D0524E5519FFD9150070C4D0 /* Item.m in Sources */,
 				D0524E5919FFD9150070C4D0 /* Pod.m in Sources */,
@@ -584,11 +590,10 @@
 				D0524E5419FFD9150070C4D0 /* Address.m in Sources */,
 				D0524E5719FFD9150070C4D0 /* Loadnote.m in Sources */,
 				D0524E3719FEB3780070C4D0 /* MLLoginViewController.m in Sources */,
-				D09906E219F93D9B00317A88 /* DetailViewController.m in Sources */,
-				D09906DF19F93D9B00317A88 /* MasterViewController.m in Sources */,
-				D09906DC19F93D9B00317A88 /* MobileLogistics.xcdatamodeld in Sources */,
+				D09906DF19F93D9B00317A88 /* MLMasterViewController.m in Sources */,
 				D0524E5819FFD9150070C4D0 /* MobLog.xcdatamodeld in Sources */,
 				D09906D919F93D9B00317A88 /* AppDelegate.m in Sources */,
+				D074A3D81A02802F0052D390 /* MLItemTextField.m in Sources */,
 				D0524E4019FFCF4E0070C4D0 /* MLCoreDataManager.m in Sources */,
 				D0524E5A19FFD9150070C4D0 /* Ref.m in Sources */,
 				D0524E5B19FFD9150070C4D0 /* Shipment.m in Sources */,
@@ -605,6 +610,7 @@
 				D09906F619F93D9B00317A88 /* MLClientTests.m in Sources */,
 				D0524E3219FAB0550070C4D0 /* MobileLogisticsModelTest.m in Sources */,
 				D0524E3A19FEB89F0070C4D0 /* MLLoginViewControllerTests.m in Sources */,
+				D074A3D31A027A7C0052D390 /* MLMasterViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -815,16 +821,6 @@
 			);
 			currentVersion = D0524E4B19FFD9150070C4D0 /* MobLog.xcdatamodel */;
 			path = MobLog.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		D09906DA19F93D9B00317A88 /* MobileLogistics.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				D09906DB19F93D9B00317A88 /* MobileLogistics.xcdatamodel */,
-			);
-			currentVersion = D09906DB19F93D9B00317A88 /* MobileLogistics.xcdatamodel */;
-			path = MobileLogistics.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

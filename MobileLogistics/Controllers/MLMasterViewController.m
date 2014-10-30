@@ -6,20 +6,20 @@
 //  Copyright (c) 2014 shane davis. All rights reserved.
 //
 
-#import "MasterViewController.h"
+#import "MLMasterViewController.h"
+#import "MLStopDetailTableViewController.h"
 #import "MLStopCell.h"
-#import "DetailViewController.h"
 #import "MLClient.h"
 #import "MLLoginViewController.h"
 #import "MLCoreDataManager.h"
 
 #import "Stop.h"
 #import "Address.h"
-@interface MasterViewController ()<MLloginViewControllerDelegate,UIAlertViewDelegate>
+@interface MLMasterViewController ()<MLloginViewControllerDelegate,UIAlertViewDelegate>
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
-@implementation MasterViewController
+@implementation MLMasterViewController
 
 - (void)awakeFromNib {
 	[super awakeFromNib];
@@ -34,10 +34,16 @@
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
     [self setRefreshControl:refreshControl];
+    
+    if ([MLClient sharedClient].username) {
+        _userLoggedIn = YES;
+    }else{
+        _userLoggedIn = NO;
+    }
 
 }
 
--(void)viewWillAppear:(BOOL)animated{
+-(void)viewDidAppear:(BOOL)animated{
     if (![MLClient sharedClient].username) {
         [self showLoginView:NO];
     }
@@ -64,7 +70,7 @@
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         Stop *selectedStop = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-        DetailViewController *dvc = (DetailViewController*)[segue destinationViewController];
+        MLStopDetailTableViewController *dvc = (MLStopDetailTableViewController*)[segue destinationViewController];
         [dvc setStop:selectedStop];
     }
 }

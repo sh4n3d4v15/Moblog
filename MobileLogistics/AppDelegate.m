@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "DetailViewController.h"
-#import "MasterViewController.h"
+#import "MLMasterViewController.h"
 #import "MLCoreDataManager.h"
 
 @interface AppDelegate ()
@@ -21,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
+    MLMasterViewController *controller = (MLMasterViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
     
     [MLCoreDataManager sharedClient].managedObjectContext = self.managedObjectContext;

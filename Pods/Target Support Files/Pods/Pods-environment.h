@@ -48,6 +48,12 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 4
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 1
 
+// TOMSMorphingLabel
+#define COCOAPODS_POD_AVAILABLE_TOMSMorphingLabel
+#define COCOAPODS_VERSION_MAJOR_TOMSMorphingLabel 0
+#define COCOAPODS_VERSION_MINOR_TOMSMorphingLabel 2
+#define COCOAPODS_VERSION_PATCH_TOMSMorphingLabel 3
+
 // pop
 #define COCOAPODS_POD_AVAILABLE_pop
 #define COCOAPODS_VERSION_MAJOR_pop 1

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-TOMSMorphingLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-pop.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>80A66901B888EA50DC072436</key>
+		<key>2954906085C1820C91CCFE73</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>84FEAAB564E0362028EEA7BD</key>
+		<key>367240BADE347E440C7AB6D2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C9DC41B57C83F3D0FBD42F5B</key>
+		<key>7F1DAD27851FDD7C8C873A6B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>97EEFC7652F62AACFC711709</key>
 		<dict>
 			<key>primary</key>
 			<true/>

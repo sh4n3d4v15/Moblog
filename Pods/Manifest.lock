@@ -21,13 +21,16 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - pop (1.0.7)
+  - TOMSMorphingLabel (0.2.3)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - pop (~> 1.0)
+  - TOMSMorphingLabel (~> 0.2.2)
 
 SPEC CHECKSUMS:
   AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
   pop: 2f14a1ea61339767af9e66741b418c831b3844df
+  TOMSMorphingLabel: f2443dbb4be2137847ed910ae2dd6adf3289c71c
 
-COCOAPODS: 0.34.2
+COCOAPODS: 0.34.4

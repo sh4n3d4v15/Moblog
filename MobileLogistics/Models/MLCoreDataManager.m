@@ -132,14 +132,9 @@
 	                NSError *error;
 	                NSArray *existingshipments = [_managedObjectContext executeFetchRequest:shipmentFetchRequest error:&error];
 
-	                NSLog(@"Shipments results from core data: %@", existingshipments);
-
 	                Shipment *shipment;
-
 	                if ([existingshipments count] == 1) {
 	                    shipment =  [existingshipments firstObject];
-
-	                    NSLog(@"I found this shipment already created: %@", shipment);
 					}
 	                else {
 	                    shipment = [NSEntityDescription insertNewObjectForEntityForName:@"Shipment" inManagedObjectContext:_managedObjectContext];
@@ -148,7 +143,6 @@
 	                    SET_IF_NOT_NULL(shipment.primary_reference_number, shipmentObj[@"primary_reference_number"]);
 
 	                    NSArray *items = [shipmentObj valueForKey:@"items"];
-	                    NSLog(@"here are the items: %@", items);
 	                    [items enumerateObjectsUsingBlock: ^(id itemObj, NSUInteger idx, BOOL *stop) {
 	                        Item *item = [NSEntityDescription insertNewObjectForEntityForName:@"Item" inManagedObjectContext:_managedObjectContext];
 	                        SET_IF_NOT_NULL(item.line, [itemObj valueForKey:@"line"]);
@@ -183,10 +177,8 @@
 
 	NSError *error = nil;
 	if (![_managedObjectContext save:&error]) {
-		NSLog(@"Unable to save context for class");
 	}
 	else {
-		NSLog(@"saved all records!");
 	}
 }
 
